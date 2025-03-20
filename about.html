@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" type="image/png" href="/favicon.png"/>
+    <title>About - Utkarsh's Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Utkarsh <span>Kesarwani</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index2.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="projects.html">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <ul>
+                    <li><a href="index2.html">Home</a></li>
+                    <li><a href="about.html"><span>About</span></a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about">
+        <div class="about-container">
+            <h1 data-aos="fade-down" data-aos-duration="1500">About Me</h1>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                    <p>
+                        Hello! I'm <span>Utkarsh Kesarwani</span>, an aspiring Software Development Engineer with a passion for building scalable and efficient systems. I have a strong foundation in data structures, algorithms, and full-stack development, and I'm always eager to learn new technologies and methodologies.
+                    </p>
+                    <p>
+                        My journey in software development began during my college years, where I developed a keen interest in solving complex problems through code. Since then, I've worked on various projects that have honed my skills in both front-end and back-end development.
+                    </p>
+                    <p>
+                        I'm particularly interested in leveraging software development and machine learning to solve real-world problems. I believe that technology has the power to transform lives, and I'm committed to contributing to this transformation through my work.
+                    </p>
+                </div>
+                <div class="about-image" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">
+                    <img src="photo.jpg" alt="Utkarsh Kesarwani">
+                </div>
+            </div>
+            <div class="interest-section" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                <h2>Interests</h2>
+                <div class="interest-list">
+                    <div class="interest">Software Development</div>
+                    <div class="interest">Machine Learning</div>
+                    <div class="interest">Computer Vision</div>
+                    <div class="interest">Natural Language Processing</div>
+                    <div class="interest">Software Engineering</div>
+                    <div class="interest">Full Stack Web Development</div>
+                    <div class="interest">Visualization</div>
+                    <div class="interest">Algorithms</div>
+                    <div class="interest">Image Processing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="script2.js"></script>
+</body>
+</html>

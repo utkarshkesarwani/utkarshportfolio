@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" type="image/png" href="/favicon.png"/>
+    <title>Utkarsh's Projects</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Utkarsh <span>Kesarwani</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index2.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="projects.html">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <ul>
+                    <li><a href="index2.html">Home</a></li>
+                    <li><a href="about.html"><span>About</span></a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="projects-section">
+        <div class="projects-container">
+            <h1 data-aos="fade-down" data-aos-duration="1500">My Projects</h1>
+            <div class="project-cards">
+                <!-- Vehicle Number Plate Detection and Recognition -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                    <div class="project-image"><img src="vehicle.jpeg" alt="Vehicle Number Plate Detection"></div>
+                    <h2>Vehicle Number Plate Detection and Recognition</h2>
+                    <p>Detects and recognizes vehicle number plates using image processing and machine learning.</p>
+                    <a href="#" class="view-details" data-project="number-plate">View Details</a>
+                </div>
+                <!-- Connectify App -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                    <div class="project-image"><img src="Connectify.jpeg" alt="Connectify App"></div>
+                    <h2>Connectify App</h2>
+                    <p>A real-time chat application designed for seamless communication, user interaction, and instant messaging.</p>
+                    <a href="#" class="view-details" data-project="connectify">View Details</a>
+                </div>
+                <!-- AI Driven Healthcare Chatbot -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                    <div class="project-image"><img src="AIDriven.jpeg" alt="AI Driven Healthcare Chatbot"></div>
+                    <h2>AI Driven Healthcare Chatbot</h2>
+                    <p>Provides health recommendations and assistance using AI-powered conversational interface.</p>
+                    <a href="#" class="view-details" data-project="healthcare-chatbot">View Details</a>
+                </div>
+                <!-- Mental Health Tracker App -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+                    <div class="project-image"><img src="MentalHealth.jpeg" alt="Mental Health Tracker App"></div>
+                    <h2>Mental Health Tracker App</h2>
+                    <p>Tracks mental health progress and provides insights for better emotional well-being.</p>
+                    <a href="#" class="view-details" data-project="mental-health">View Details</a>
+                </div>
+                <!-- Spam Email Classifier -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
+                    <div class="project-image"><img src="Spam.jpeg" alt="Spam Email Classifier"></div>
+                    <h2>Spam Email Classifier</h2>
+                    <p>Classifies emails as spam or non-spam using machine learning algorithms.</p>
+                    <a href="#" class="view-details" data-project="spam-classifier">View Details</a>
+                </div>
+                <!-- Weather Web App -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">
+                    <div class="project-image"><img src="Weather.jpeg" alt="Weather Web App"></div>
+                    <h2>Weather Web App</h2>
+                    <p>Provides real-time weather updates and forecasts for locations worldwide.</p>
+                    <a href="#" class="view-details" data-project="weather-app">View Details</a>
+                </div>
+                <!-- Hotel Booking Management System -->
+    <div class="project-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400">
+        <div class="project-image">
+            <img src="hotelbooking.jpeg" alt="Hotel Booking Management System">
+        </div>
+        <h2>Hotel Booking Management System</h2>
+        <p>A web-based system for managing hotel bookings, room availability, and customer reservations.</p>
+        <a href="#" class="view-details" data-project="hotel-booking">View Details</a>
+    </div>
+            </div>
+        </div>
+        <div style="height: 80px;"></div>
+    </section>
+
+   <!-- Modal for Project Details -->
+   <div id="project-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2 id="modal-title"></h2>
+        <div class="modal-body">
+            <div class="tech-stack">
+                <h3>Tech Stack</h3>
+                <p id="modal-tech-stack"></p>
+            </div>
+            <div class="github-link">
+                <h3>GitHub URL</h3>
+                <a id="modal-github" href="#" target="_blank">Project Link</a>
+            </div>
+            <div class="project-description">
+                <h3>Description</h3>
+                <div id="modal-description"></div> <!-- Use a div to render HTML content -->
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="script2.js"></script>
+</body>
+</html>
